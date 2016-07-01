@@ -1,0 +1,15 @@
+How does your gem take advantage of Ruby’s metaprogramming capabilities?
+
+I tried to use metaprogramming wherever it was viable, kept code DRY, and allowed for future feature expansion. One great example is in String#create_colors. To generate all of these methods, the gem iterates through a class variable array of color options. String#colors uses the same array. So, if I wanted to add more colors in the future, I would just add them to the @@color_options array and know that two of my gem's three methods are good to go.
+
+How long did you spend working on this project?
+
+I spent about two hours building this gem. At least that much time beforehand going through (and trying to understand) the new concepts.
+
+What was the most rewarding challenge you conquered?
+
+Really grasping these implementations of metaprogramming was probably the hardest thing I've had to do so far in the Nanodegree. I'm really glad that I understand how and why this gem's metaprogramming is doing what it's doing.
+
+Where do you still have room to grow?
+
+I need to spend more time writing Ruby code on a day-to-day basis. I've found it harder to just "mess around" with the language, because coming up with something to do is a little less defined - the language can do so much. When I was learning HTML and basic JavaScript, it was a lot easier for me to find things to do just to get practice, because simple little UI experiments come to mind more easily for me. For this reason especially, I'm really looking forward to starting the Ruby On Rails Nanodegree as soon as I complete this one.
