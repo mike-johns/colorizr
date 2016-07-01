@@ -4,11 +4,15 @@ Colorizr is a simple Gem that changes the text color of any String on the comman
 
 ##Getting Started
 
+To install Colorizr...
+
 `gem install colorizr` (_Note: You may need to add `sudo` to the beginning_)
 
-...And in your project...
+...Then, in your project...
 
 `require 'colorizr'`
+
+...That's it!
 
 ##How To Use
 
@@ -17,10 +21,10 @@ To create the color methods, run this command during your project's setup:
 `String.create_colors`
 
 Then, to format a String in a particular color, just add a color method.
-
-`test = "Hello world!"
-puts test.red`
-
+```
+test = "Hello world!"
+puts test.red
+```
 You can also see a list of available colors...
 ```
 String.colors
